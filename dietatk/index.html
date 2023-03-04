@@ -1,86 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Short Pós-Parto - Acabe com as dores e volte a se sentir bem!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      /* Estilos gerais */
-      * {
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-      }
-      
-      /* Estilos para desktop */
-      @media (min-width: 768px) {
-        /* Layout da página */
-        .container {
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .col {
-          width: 50%;
-          padding: 0 20px;
-          box-sizing: border-box;
-        }
-        .col img {
-          width: 100%;
-          height: auto;
-        }
-        /* Estilo do botão de compra */
-        .btn {
-          display: inline-block;
-          padding: 10px 20px;
-          background-color: #ff4d4d;
-          color: #fff;
-          font-weight: bold;
-          text-decoration: none;
-          border-radius: 5px;
-          transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-          background-color: #ff3333;
-        }
-      }
-      
-      /* Estilos para mobile */
-      @media (max-width: 767px) {
-        /* Layout da página */
-        .container {
-          max-width: 100%;
-          margin: 0;
-        }
-        .col {
-          width: 100%;
-          padding: 20px;
-        }
-        .col img {
-          width: 100%;
-          height: auto;
-        }
-        /* Estilo do botão de compra */
-        .btn {
-          display: block;
-          width: 100%;
-          margin-bottom: 20px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <!-- Coluna da esquerda - informações sobre o short pós-parto -->
-      <div class="col">
-        <h1>Short Pós-Parto</h1>
-        <p>Você acabou de ter um bebê e está sofrendo com dores no pós-parto, como estrias, flacidez e diástase?</p>
-        <p>O nosso short pós-parto é a solução para esses problemas! Ele foi desenvolvido especialmente para ajudar as mamães a recuperarem a forma e a autoestima após o parto.</p>
-        <h2>Benefícios do nosso short pós-parto:</h2>
-        <ul>
-          <li>Redução de medidas na região abdominal e do quadril</li>
-          <li>Melhora na circulação sanguínea</li>
-          <li>Redução da flacidez da pele</li>
-          <li>Redução de estrias</li>
-          <li>Ajuda na recuperação da diástase abdominal</li>
-        </ul>
-        <p>Não perca mais tempo sofrendo com as dores do pós-part
+<head>
+  <title>Short Pós-Parto | Seu corpo de volta!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Estilos globais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      color: #333;
+      font-size: 16px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilos da seção de cabeçalho */
+    .header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    /* Estilos da seção de imagem principal */
+    .main-image {
+      background-color: #f6f6f6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main-image img {
+      max-width: 80%;
+    }
+
+    /* Estilos da seção de recursos */
+    .features {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 100px;
+    }
+
+    .features h2 {
+      font-size: 24px;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .features p {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .features li {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .features li img {
+      max-width: 100%;
+    }
+
+    .features li h3 {
+      margin: 10px 0;
+    }
+
+    .features li p {
+      margin: 0;
+    }
+
+    /* Estilos da seção de depoimentos */
+    .testimonials {
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+
+    .testimonials h2 {
+      font-size: 24px;
+      margin-top: 0;
+      text-align: center;
+    }
+
